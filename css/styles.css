@@ -1,0 +1,117 @@
+/* Variables  */
+:root {
+  --brand-color: #2196f3;
+  --brand-background-color: #2f303a;
+  --brand-background-sub-color: #f5f4fa;
+  --brand-text-color: #212121;
+  --brand-sub-color: #757575;
+}
+/* Body Css */
+body {
+  font-family: "Roboto", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style-type: none;
+}
+/* Header Css */
+.nav-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--brand-text-color);
+}
+
+.list-item .link.active {
+  color: var(--brand-color);
+}
+.contact-list {
+  font-weight: 500;
+  color: var(--brand-sub-color);
+}
+a:hover,
+a:focus {
+  color: var(--brand-color);
+}
+button:hover,
+button:focus {
+  color: var(--brand-background-color);
+}
+/* Buttons Css */
+button {
+  cursor: pointer;
+  border: none;
+}
+
+.logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--brand-color);
+}
+
+/* Introduction Css */
+.introduction {
+  background-color: var(--brand-background-color);
+}
+.title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 136%;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.btn {
+  font-size: 16px;
+  line-height: 30px;
+}
+.btn-primary {
+  /* border-color: var(--brand-color); */
+  background: var(--brand-color);
+  color: #ffffff;
+  font-weight: 700;
+}
+.btn.active{
+    background-color: var(--brand-color);
+    color: #ffffff;
+}
+
+/* About css */
+.about h2,
+.about .team-info {
+  text-align: center;
+}
+
+.team-info .name {
+  font-weight: 500;
+  font-size: 1.2em;
+}
+.team-info .job {
+  color: var(--brand-sub-color);
+}
+.team {
+  background-color: var(--brand-background-sub-color);
+}
+
+/* Portfolio Css */
+.portfolio-filter button{
+background-color: var(--brand-background-sub-color);
+}
+/* Footer Css */
+.footer {
+  background-color: var(--brand-background-color);
+}
+.address {
+  color: #ffffff;
+}
+.address ul {
+  font-size: 14px;
+  line-height: 171%;
+  /* or 171% */
+  letter-spacing: 0.03em;
+}
