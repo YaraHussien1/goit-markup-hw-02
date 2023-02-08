@@ -5,10 +5,13 @@
   --brand-background-sub-color: #f5f4fa;
   --brand-text-color: #212121;
   --brand-sub-color: #757575;
+  --brand-white-color: #fff;
+  --font-fmily-brand: "Raleway", sans-serif;
+  --font-family-main: "Roboto", sans-serif;
 }
 /* Body Css */
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-family-main);
 }
 a {
   text-decoration: none;
@@ -21,36 +24,42 @@ ul {
 .nav-list {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
-  color: var(--brand-text-color);
+  line-height: 1.1;
+  letter-spacing: 0.02em;
 }
 
 .list-item .link.active {
   color: var(--brand-color);
 }
-.contact-list {
+.contact-list li a{
   font-weight: 500;
   color: var(--brand-sub-color);
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
 }
-a:hover,
-a:focus {
+.link:hover,
+.link:focus {
   color: var(--brand-color);
 }
-button:hover,
+
+.btn:hover,
 button:focus {
   color: var(--brand-background-color);
 }
 /* Buttons Css */
-button {
+.btn {
   cursor: pointer;
   border: none;
 }
 
 .logo {
-  font-family: "Raleway";
+  font-family: var(--font-fmily-brand);
   font-weight: 700;
   font-size: 26px;
   color: var(--brand-color);
+  letter-spacing: 0.03em;
+  line-height: 1.2;
 }
 
 /* Introduction Css */
@@ -60,11 +69,11 @@ button {
 .title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 136%;
+  line-height: 1.4;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--brand-white-color);
 }
 .btn {
   font-size: 16px;
@@ -73,34 +82,102 @@ button {
 .btn-primary {
   /* border-color: var(--brand-color); */
   background: var(--brand-color);
-  color: #ffffff;
+  color: var(--brand-white-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-bottom-left-radius: 0;
   font-weight: 700;
+  font-size: 16;
+  line-height: 1.88;
+  padding: 10px 20px 10px 20px;
 }
-.btn.active{
-    background-color: var(--brand-color);
-    color: #ffffff;
+.btn.btn-primary:hover {
+  color: var(--brand-text-color);
+}
+.btn.active {
+  background-color: var(--brand-color);
+  color: var(--brand-white-color);
+}
+.section .sction-sub-title{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
+.section .description{
+ font-weight: 400;
+ font-size: 14px;
+ line-height: 1.7;
+ letter-spacing: 0.03em;
+ color: var(--brand-sub-color);
+}
 /* About css */
 .about h2,
 .about .team-info {
   text-align: center;
 }
+.section .section-title{
+  color: var(--brand-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+}
 
 .team-info .name {
   font-weight: 500;
-  font-size: 1.2em;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+
 }
 .team-info .job {
   color: var(--brand-sub-color);
+  font-weight: 400;
+  font-size: 16;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+
 }
 .team {
   background-color: var(--brand-background-sub-color);
 }
 
 /* Portfolio Css */
-.portfolio-filter button{
-background-color: var(--brand-background-sub-color);
+.portfolio-filter .btn {
+  background-color: var(--brand-background-sub-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.portfolio-filter .btn.btn.active {
+  background-color: var(--brand-color);
+}
+.btn:hover {
+  color: var(--brand-color);
+}
+.btn.btn.active:hover {
+  color: var(--brand-background-color);
+}
+.portfolio .info .name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio .info .category {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--brand-sub-color);
 }
 /* Footer Css */
 .footer {
@@ -111,7 +188,14 @@ background-color: var(--brand-background-sub-color);
 }
 .address ul {
   font-size: 14px;
-  line-height: 171%;
-  /* or 171% */
+  font-weight: 400;
+  line-height: 1.7;
   letter-spacing: 0.03em;
+}
+.address .contact{
+  color: rgba(255, 255, 255, 0.6);
+
+}
+.contact.link:hover{
+  color: var(--brand-color);
 }
